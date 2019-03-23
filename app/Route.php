@@ -1,29 +1,27 @@
 <?php
 
-namespace App;
-
 use App\Controllers\TaskController;
 
 require '../vendor/autoload.php';
 
 if (isset($_POST["route"])) {
-    echo Route::route($_POST["route"]);
+    echo json_encode(Route::res($_POST["route"]));
 }
 
 class Route
 {
     /**
      * @param $action
-     * @return false|string
+     * @return array
      */
-    public static function route($action)
+    public static function res($action)
     {
         switch($action){
             case 'first':
-                return json_encode(TaskController::selectFirstTask());
+                return TaskController::selectFirstTask();
                 break;
             case 'second':
-                return json_encode(TaskController::selectSecondTask());
+                return TaskController::selectSecondTask();
                 break;
         }
     }

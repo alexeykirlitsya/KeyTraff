@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#first").click(function(){
-        $('.result-first').toggle()
+        $('.result-first').toggle(400);
         $.ajax({
             url: 'app/Route.php',
             type: 'POST',
@@ -27,7 +27,7 @@ $(document).ready(function(){
         });
     })
     $("#second").click(function(){
-        $('.result-second').toggle()
+        $('.result-second').toggle(400);
         $.ajax({
             url: 'app/Route.php',
             type: 'POST',

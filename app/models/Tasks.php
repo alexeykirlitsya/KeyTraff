@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use PDOException;
-use App\Logger;
 use App\Db;
+use App\Logger;
+use PDOException;
 
 class Tasks
 {
@@ -26,8 +26,8 @@ class Tasks
      */
     public function selectFirstTask() {
         try {
-            $sql = "SELECT requests.id AS `id`, offers.name AS `name`, requests.price AS `price`, requests.count AS `count`, operators.fio AS `fio` FROM requests 
-                    JOIN offers ON requests.offer_id = offers.id 
+            $sql = "SELECT requests.id AS `id`, offers.name AS `name`, requests.price AS `price`, requests.count AS `count`, operators.fio AS `fio` FROM requests
+                    JOIN offers ON requests.offer_id = offers.id
                     JOIN operators ON requests.operator_id = operators.id
                     WHERE requests.count > 2
                     AND operators.id = 10 OR operators.id = 12";

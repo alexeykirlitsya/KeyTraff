@@ -18,7 +18,7 @@
                 Есть 3 таблицы (в приложенном файле): offers (товары), operators (операторы), requests (заказы).<br>
                 Вывести такие варианты запросов:</p>
             <hr>
-            <p>1) Номер заказа, имя товара, цена, количество, имя оператора за которым числится заказ ,ГДЕ количество товара >2 И id оператора 10 ИЛИ 12</p>
+            <p>1) Номер заказа, имя товара, цена, количество, имя оператора за которым числится заказ, ГДЕ количество товара >2 И id оператора 10 ИЛИ 12;</p>
             <button type="button" class="btn btn-success" id="first">Результат</button>
             <div class="result-first">
                 <table class="table table-bordered table-sm">
@@ -36,7 +36,7 @@
                 </table>
             </div>
             <hr>
-            <p>2) Имя товара, количество товара, и сумма (price) по каждому товару (сгруппировать)</p>
+            <p>2) Имя товара, количество товара, и сумма (price) по каждому товару (сгруппировать);</p>
             <button type="button" class="btn btn-success" id="second">Результат</button>
             <div class="result-second">
                 <table class="table table-bordered table-sm">
